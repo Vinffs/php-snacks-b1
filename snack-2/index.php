@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['submit'])) {
     </header>
 
     <main>
-      <form class="w-50 mx-auto" action='index.php' method="GET">
+      <form class="w-50 mx-auto" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
         <div class="mb-3">
           <label for="input_name" class="form-label">Your name</label>
           <input type="text" class="form-control" id="input_name" aria-describedby="nameHelp" name="user_name"
